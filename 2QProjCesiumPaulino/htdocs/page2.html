@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <title>keeb.net</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Rafael Paulino">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<meta name="revised" content="6-11-2020">
+		<link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" type="image/png" href="../images/globalimages/favicon.png"/>
+
+    <style>
+    #smallfont {
+      font-size: 0.95em;
+    }
+    #intro {
+      padding-right:3vw;
+    }
+    #pcb {
+      font-size:0.95em; 
+      margin-left:2vw;
+    }
+    #plate {
+      font-size:0.95em;
+      border-right: 0.4vw solid #deaf9d; 
+      padding-right: 3vw; 
+      margin-right: 2vw;
+    }
+    #stabs {
+      font-size:0.95em; 
+      margin-left:2vw;
+    }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <main id="content"> 
+
+      <!-- website header --->
+      <header style="grid-column-start:1; grid-column-end:4; margin:1vw 0px; display:table">
+        <img src="../images/globalimages/logo.png" width="80%" height="auto" title="Keyboard" alt="keeb.net Logo" style="display:table-cell; vertical-align:middle;">
+      </header>
+      <nav style="grid-column-start:4; grid-column-end:11" id="header">
+        <span id="navbar"><a href=../index.html>Homepage</a> <a href=page2.html id="currentpage">Anatomy</a> <a href=page3.html>Parts</a> <a page4.html>Building</a> <a href=page5.html>Glossary</a></span>
+      </nav>      
+      <figure style="grid-column-start:1; grid-column-end:11" id="headerhr"></figure>
+
+      <!-- intro  --->
+      <article style="grid-column-start:1; grid-column-end:7" id="intro">
+        <h2>Parts of a custom keyboard</h2>
+        <p>To build a mechanical keyboard, you need to know the parts you need. This will generally be in the order of parts you should pick, to avoid compatibility issues down the line. Most of these can be bought from consumer online stores like <a href="https://shopee.ph">Shopee</a>, <a href="https://www.lazada.com.ph/">Lazada</a>, or <a href="https://www.amazon.com/">Amazon</a>. However there are many dedicated keyboard vendors like <a href="https://kbdfans.com/">KBDFans</a>, <a href="https://novelkeys.com/">Novelkeys</a>, or <a href="https://zionstudios.ph/">ZionStudios PH</a>. These vendors typically offer a better range and more enthusiast-catered products. For this guide, keep in mind that there are exceptions and special cases. This also only applies to the cherry MX style custom market.</p>
+      </article>
+      <figure style="grid-column-start:7; grid-column-end:11">
+        <a href="https://kbdfans.com/collections/diy-kit/products/icd65-mechanical-keyboard-kit"><img src="../images/anatomyimages/keebparts.png" width="100%" height="auto" title="From KBDFans" alt="Exploded Keyboard"></a>
+      </figure>
+
+      <!-- case --->
+      <article style="grid-column-start:1; grid-column-end:5" id="smallfont">
+        <h3>1. Case</h3>
+        <p>The case is what encases the internals and electronics of the keyboard. It makes up most of the board so this is what you should choose first. The case dictates the form factor of your board, the PCB, plate options, the overall aesthetics, and a lot of the cost. It can be made of things like aluminum, metal, plastic, polycarbonate, acrylic, and many more. Many of these online just come with the case, however many also come with almost everything you need like a compatible plate, PCB, and stabilizers. These are called barebones (BB) kits and they are great for beginners as they have what you need to get started. Some examples of BB kits are the GMMK Pro, TM680, or the KBD65.</p>
+      </article>
+      <figure style="grid-column-start:5; grid-column-end:8">
+        <a href="https://kbdfans.com/collections/65-layout-case/products/in-stocktofu-65-aluminum-case"><img src="../images/anatomyimages/tofucase.png" width="85%" height="auto" title="Tofu65 Case from KBDFans" alt="Tofu 65 Case" style="float:right"></a>
+      </figure>
+      <figure style="grid-column-start:8; grid-column-end:11">
+        <a href="https://kbdfans.com/products/axol-studio-yeti-mechanical-keyboard-kit"><img src="../images/anatomyimages/yeticase.png" width="85%" height="auto" title="Axol Yeti Case from KBDFans" alt="Yeti Case" style="float:right"></a>
+      </figure>
+
+      <!-- pcb --->
+      <figure style="grid-column-start:1; grid-column-end:5; position:relative; top:1vw">
+        <a href="https://kbdfans.com/collections/pcb/products/kbd65-65-custom-mechanical-keyboard-pcb"><img src="../images/anatomyimages/pcb.png" width="100%" height="auto" title="PCB from KBDFans" alt="PCB"></a>
+      </figure>
+      <article style="grid-column-start:5; grid-column-end:11" id="pcb">
+        <h3>2. PCB</h3>
+        <p>The printed circuit board is what makes the entire thing work: it’s the brain of the keyboard. It houses all the electronics and it’s what you put the switches in. The two types of PCBs are hotswap and soldered. The former allows you to just snap in your switches without the need for any tools, but it is slightly more expensive. The latter needs you to solder the switches in, but it is cheaper than the alternative.</p>
+      </article>
+
+      <!-- plate --->
+      <article style="grid-column-start:1; grid-column-end:6" id="plate">
+        <h3>3. Plate</h3>
+        <p>The plate is what goes in between the switches and PCB. This is done to secure the switches to the PCB and to attach the PCB assembly to the case. The plate material dictates how it feels and sounds. Metal plates, like aluminum or brass, usually sound harsher and are stiffer than plastic plates, like POM or polycarbonate. The mounting style is a popular topic and has many forms. Tray or integrated plate mounts usually feel stiffer than top or gasket mounts. Almost all the time, plates are sold with the case of the board. But when you do buy them separately, make sure that the two are compatible to avoid any issues.</p>
+      </article>
+      <figure style="grid-column-start:7; grid-column-end:10">
+        <a href="https://kbdfans.com/collections/plate/products/cnc-60-aluminum-plate"><img src="../images/anatomyimages/aluplate.jpg" width="85%" height="auto" title="Aluminum Plates from KBDFans" alt="Alu Plates" style="float:right"></a>
+      </figure>
+
+      <!-- stablilizers --->
+      <figure style="grid-column-start:1; grid-column-end:4">
+        <a href="https://kbdfans.com/collections/keyboard-stabilizer/products/gateron-lubed-plate-mounted-stabilizers"><img src="../images/anatomyimages/stab1.png" width="85%" height="auto" title="Gateron Stabilizers from KBDFans" alt="Gateron Stabs"></a>
+      </figure>
+      <figure style="grid-column-start:4; grid-column-end:7">
+        <a href="https://kbdfans.com/collections/keyboard-stabilizer/products/coming-soon-kbdfans-pc-screw-in-stabilizers"><img src="../images/anatomyimages/stab2.jpg" width="85%" height="auto" title="KBDFans PC Stabilizers" alt="KBDFans Stabs"></a>
+      </figure>
+      <article style="grid-column-start:7; grid-column-end:11" id="stabs">
+        <h3>4. Stabilizers</h3>
+        <p>In my opinion, the stabilizers, or stabs, are the most important part of any build that you need to spend the most time on. This is what’s used to stabilize the longer keys on any keyboard like the spacebar or enter keys. Lubing these is almost a necessity, in my opinion, otherwise, a faint rattling can be heard when you press a key. This has led many (including me) to spend hours testing and lubing to stop the rattle. The two types of stabilizers are plate-mounted and PCB-mounted stabilizers. What you need is dictated by what your PCB and plate allow. Plate-mounted stabs can be more rattly and less high quality compared to PCB-mounted or screw-in stabs.</p>
+      </article>
+
+      <!-- switches --->
+      <article style="grid-column-start:1; grid-column-end:6" id="smallfont">
+        <h3>5. Switches</h3>
+        <p>This might be the most well-known part of the hobby. There are 3 general types: linear, tactile, and clicky.</p>
+        <ol>
+          <li>Linear</li>
+          <p>These switches are completely smooth throughout, with no click or bump. These switches are best when lubed and filmed. Some popular examples are Cherry MX reds, Gateron yellows or inks, NK Creams, and Tealios. </p>
+          <li>Tactile</li>
+          <p>These switches have a tactile bump in the middle to let you know when it actuates your keypress. These are also good when lubed but with something thinner as to keep the feeling of tactility. Popular examples are Cherry MX browns, Zealios, Holy/Glorious pandas, or Durock T1s.</p>
+          <li>Clicky</li>
+          <p>These switches provide an audible click and bump in the middle to let you know when it actuates. These usually aren’t lubed as it could interfere with the clicking. Popular examples are Cherry MX blues or Kailh box jades/navys.</p>
+        </ol>
+      </article>
+      <figure style="grid-column-start:6; grid-column-end:11; margin:8vw 3vw 0px">
+        <video width="100%" height="auto" autoplay muted controls>
+          <source src="../mmfiles/switchanimation.mp4">
+          Your browser does not support the video element. Kindly update it to the latest version.
+        </video>
+        <figcaption id="smallfont">From <a href="https://youtu.be/1NpNygIrnaQ?t=375">"Anatomy of a Custom Mechanical Keyboard"</a> by TaehaTypes</figcaption>
+      </figure>
+
+      <!-- keycaps --->
+      <figure style="grid-column-start:1; grid-column-end:4">
+        <a href="https://www.reddit.com/r/MechanicalKeyboards/comments/9q30z6/e6v2_ft_gmk_red_samurai_endgame_material/"><img src="../images/anatomyimages/gmkredsamurai.jpg" width="95%" height="auto" title="GMK Red Samurai" alt="GMK Red Samurai Keycaps"></a>
+      </figure>
+      <figure style="grid-column-start:4; grid-column-end:7">
+        <a href="https://www.reddit.com/r/MechanicalKeyboards/comments/o6dzn2/mode65_ewhite_prototype_with_gmk_olivia/"><img src="../images/anatomyimages/gmkolivia.jpg" width="95%" height="auto" title="GMK Olivia" alt="GMK Olivia Keycaps"></a>
+      </figure>  
+      <article style="grid-column-start:7; grid-column-end:11" id="smallfont">
+        <h3>6. Keycaps</h3>
+        <p>Keycaps are the final piece of a custom board that ties everything together and makes the aesthetics. There are many keycaps profiles, like  cherry, OEM, SA, XDA, etc. The two popular keycap plastic materials are ABS and PBT. Both materials have their own positives and negatives, and much like everything else in this hobby, it’s all about preference. Popular keycap brands include GMK, EnjoyPBT, Taihao, or Maxkey.</p>
+      </article>
+
+      <!-- other parts --->
+      <article style="grid-column-start:1; grid-column-end:6" id="smallfont">
+        <h3>7. Additional Parts</h3>
+        <ol>
+          <li>Foam/Rubber</li>
+          <p>To lessen the hollowness of a board, a sound-insulating material is sometimes used inside the case.</p>
+          <li>Weight</li>
+          <p>Many high-end boards come with default or optional weight to make it heavier and to add some sort of quality.</p>
+          <li>Custom USB Cable</li>
+          <p>You can buy a custom cable to tie in the aesthetics of your board and setup. Compared to the default USB cable, this only differs in aesthetics.</p>
+          <li>Artisan Keycaps</li>
+          <p>These keycaps can be bought or made yourself, from things like rubber, clay, epoxy, metal, etc. These usually cost a lot, and a lot of the time it is only used for special keys like escape or enter.</p>
+        </ol>
+      </article>
+      <figure style="grid-column-start:7; grid-column-end:10">
+        <a href="https://www.reddit.com/r/MechanicalKeyboards/comments/itvfjo/giveaway_jelly_key_zen_pond_iii_artisan_keycaps/"><img src="../images/anatomyimages/artisancaps.jpg" width="90%" height="auto" title="Koi Keycaps" alt="Koi Artisan Keycaps" style="float:left; margin-top:3vw"></a>
+        <a href="https://www.reddit.com/r/MechanicalKeyboards/comments/p2coin/unicorn_cables_pastel_rainbow_giveaway/"><img src="../images/anatomyimages/coiledcable.jpg" width="90%" height="auto" title="Custom Coiled Cable" alt="Custom Coiled Cable" style="float:right; margin-top:3vw"></a>
+      </figure>
+
+      <!-- youtube video --->
+      <figure style="grid-column-start:3; grid-column-end:9; height:30vw; padding-bottom:10vw">
+        <h2>Anatomy in detail:</h2>
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/1NpNygIrnaQ?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer;autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>Video - "Anatomy of a Custom Mechanical Keyboard" by Taeha Types</p>
+      </figure>
+
+    </main>
+    
+    <!-- footer --->
+    <img src="../images/globalimages/bongocat.png" width="10%" title="bongo cat" alt="bongo cat" style="position:fixed; bottom:5.7vh; right:0">
+    <footer> 
+      <span style="position:relative; top:1.5vh">
+        &nbsp<a href=about.html>About</a> <a href=sources.html>Sources</a>
+        <span style="word-spacing:normal; float:right; margin-right:25px">Theme: GMK Olivia</span>
+      </span>
+    </footer>
+
+  </body>
+
+</html>
