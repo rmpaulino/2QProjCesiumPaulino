@@ -16,43 +16,53 @@ main#content {
   grid-template-columns: repeat(10, 9%);
   grid-column-gap: 1vw;
   grid-row-gap: 3.5vw;
-  margin: 0px 25px 5vw 25px;
+  margin: 11vw 25px 5vw 25px;
 }
-figure img {
+#content figure img {
 	opacity: 1;
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
-figure:hover img {
+#content figure:hover img {
 	opacity: .5;
+  transform: scale(1.02, 1.02);
+}
+.smallfont {
+  font-size: 0.95em;
+}
+.smallerfont {
+  font-size: 0.8em;
 }
 
 /* header */
-nav#header a:link, nav#header a:visited {
+#navbar {
+  display: inline;
+  position: fixed; 
+  top: 2.25vw; 
+  right: 2vw;
+  word-spacing:3vw; 
+  font-size:1.5vw;
+  font-weight: 300;
+  margin-right:15px;
+  vertical-align: middle; 
+  text-align: right;
+}
+#navbar a:link, #navbar a:visited {
   color: #f2efed;
   text-decoration: none;
 }
-nav#header a:hover {
+#navbar a:hover {
   color: #deaf9d;
-}
-nav#header {
-  word-spacing:3vw; 
-  font-size:1.5vw;
-  display:table; 
-  margin-right:15px;
 }
 #currentpage {
   font-weight: bold;
   text-decoration: underline !important; 
 }
-#navbar {
-  display: table-cell; 
-  vertical-align: middle; 
-  text-align: right;
-}
 #headerhr {
-  position:relative; 
-  bottom:3vw; 
+  position:absolute;
+  bottom: 0;
+  left: -3vw;
+  width: 150%;
   border-top:0.5vw solid #deaf9d;
 }
 
@@ -63,6 +73,7 @@ body {
 }
 figure {
   margin: 0;
+  display: inline;
 }
 
 /* footer */
@@ -83,4 +94,53 @@ footer {
   position: fixed;
   bottom: 0;
   margin-left: -0.5vw;
+}
+footer figure {
+  display: block;
+}
+
+/* socmed sprite */
+a.reddit {
+  background: url('../images/globalimages/socmedsprite.png') no-repeat 0px 0px;
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  bottom: 0.9vh;
+  right: 1.4vh;
+}
+a.reddit:hover {
+  background: url('../images/globalimages/socmedsprite.png') no-repeat 0px -30px;
+  width: 30px;
+  height: 30px;
+  transform: scale(1.1, 1.1);
+}
+a.geekhack {
+  background: url('../images/globalimages/socmedsprite.png') no-repeat -30px 0px;
+  width: 30px;
+  height: 30px;
+  transform: scale(1.4, 1.4);
+  position: fixed;
+  bottom: 0.9vh;
+  right: 9vh;
+}
+a.geekhack:hover {
+  background: url('../images/globalimages/socmedsprite.png') no-repeat -30px -30px;
+  width: 30px;
+  height: 30px;
+  transform: scale(1.5, 1.5);
+}
+a.discord {
+  background: url('../images/globalimages/socmedsprite.png') no-repeat -60px 0px;
+  width: 30px;
+  height: 30px;
+  transform: scale(1.4, 1.4);
+  position: fixed;
+  bottom: 0.9vh;
+  right: 18vh;
+}
+a.discord:hover {
+  background: url('../images/globalimages/socmedsprite.png') no-repeat -60px -30px;
+  width: 30px;
+  height: 30px;
+  transform: scale(1.5, 1.5);
 }

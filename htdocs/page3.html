@@ -1,8 +1,133 @@
 <!DOCTYPE html>
 <html>
-  
+
+  <head>
+
+    <title>keeb.net</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Rafael Paulino">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<meta name="revised" content="6-11-2020">
+		<link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" type="image/png" href="images/globalimages/favicon.png"/>
+
+    <style>
+    #formfactors {
+      border-right:0.4vw solid #deaf9d; 
+      padding-right:3vw; 
+      margin-right:1vw;
+    }
+    </style>
+
+  </head>
+
   <body>
-    <p>Page 3/Parts</p>
+
+    <!-- website header --->
+    <header style="position:fixed; height: 7vw; top:0; background-color:#1c1b1d; z-index:10">
+      <figure style="position:relative; top:1.5vw; left: 1vw">
+        <img src="../images/globalimages/logo.png" width="22%" height="auto" title="Keyboard" alt="keeb.net Logo">
+      </figure>
+      <nav id="navbar"><a href=../index.html>Homepage</a> <a href=page2.html>Anatomy</a> <a href=page3.html id="currentpage">Buying</a> <a href=page4.html>Building</a> <a href=page5.html>Glossary</a></nav>
+      <figure id="headerhr"></figure>
+    </header>
+
+    <main id="content"> 
+
+      <!-- intro --->
+      <article style="grid-column-start:1; grid-column-end:11">
+        <h2>Buying and Picking keyboards parts</h2>
+        <p>Buying and picking parts are, a lot of the time, more confusing than actually building a keyboard. With all the different parts from different manufacturers, with different sizes and terms, choosing compatible components can be a complicated cacophonous chore. All the options and choices with miniscule differences are not very beginner friendly, making it hard to make sure that what you're picking is correct. This will cover many basics of keyboard part picking and buying.</p>
+      </article>
+
+      <!-- Groupbuy vs Aftermarket vs In stock --->
+      <article style="grid-column-start:1; grid-column-end:6" class="smallfont">
+        <h3>Groupbuy vs Aftermarket vs In stock</h3>
+        <p>If you’ve tried looking for parts, you’ve likely seen these terms before. These simply refer to ways you can get keyboard related products.</p>
+        <ol>
+          <p>1. Groupbuy</p>
+          <p>A groupbuy is when many consumers pre-order keyboard parts, usually keycaps or cases, from a vendor or designer. When enough consumers pre-order the manufacturer will then produce the items. If not enough people want the product, it won’t be manufactured. This is done for the vendor and manufacturer to save costs because they only produce the designs that people actually want. Groupbuys are sometimes risky, due to designers sometimes not delivering on the promised products, and the final product can take well over a year to ship from the start of the process. However, many people still participate in these because of the appeal of custom-made high-quality products. Many people can host groupbuys, from established vendors like KBDFans or Novelkeys to independent designers looking for their work to be made.</p>
+        </ol>
+      </article>
+      <figure style="grid-column-start:6; grid-column-end:11; padding:8vw 0 0 5vw">
+        <iframe width="80%" height="75%" src="https://www.youtube.com/embed/YfhDNqJK5PY?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer;autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p class="smallerfont">Video - "Tips on How To Enter Your First Group Buy..." by Andy Nguyen</p>
+      </figure>
+      <!-- aftermarket --->
+      <figure style="grid-column-start:1; grid-column-end:4">
+        <a href="https://www.facebook.com/groups/MechKeyboardMarketPH/about"><img src="../images/buyingimages/mechmarketPH.png" width="95%" height="auto" title="MechMarketPH" alt="MechMarketPH FB Group"></a>
+      </figure>  
+      <figure style="grid-column-start:4; grid-column-end:7">
+        <a href="https://www.reddit.com/r/mechmarket/"><img src="../images/buyingimages/rmechmarket.png" width="95%" height="auto" title="r/mechmarket" alt="r/mechmarket Reddit forum"></a>
+        <figcaption class="smallerfont" style="position:relative; top:2vw">r/mechmarket and Mech Market PH are popular resell groups for buying and selling</figcaption>
+      </figure>  
+      <article style="grid-column-start:7; grid-column-end:11; position:relative; bottom:2vw" class="smallfont">
+        <p>2. Aftermarket</p>
+        <p>The aftermarket is the keyboard term for the reselling market. It is full of group-buy products that people resell at a much higher price. For example, if some GMK keycaps sell at a groupbuy for 100 dollars, it could see prices of more than 500 dollars in the aftermarket purely because of their demand and rarity. Unless you really really want a product and you are willing to pay much more than its original price, it’s usually not recommended to buy from here.</p>
+      </article>
+      <!-- in stock --->
+      <article style="grid-column-start:1; grid-column-end:6" class="smallfont">
+        <p>3. In stock</p>
+        <p>Despite popular belief, there are many in stock products that can be bought for cheap from everywhere. They are products that you can just buy from vendors like KBDFans, Novelkeys, or even Shopee or Lazada. Sometimes, premium items can even be found in physical stores like Datablitz. These are usually cheaper and obviously much more available than group-buy items. This is the best to buy for beginners because of the low cost, low commitment, and fast shipping time (usually).</p>
+      </article>
+      <figure style="grid-column-start:6; grid-column-end:11; height: 20vw; padding:0 0 3vw 5vw">
+        <iframe width="80%" height="100%" src="https://www.youtube.com/embed/k74cL8kll9o?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer;autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <figcaption class="smallerfont">Video - "Tips on How To Enter Your First Group Buy..." by Andy Nguyen</figcaption>
+      </figure>
+
+      <!-- form factors --->
+      <article style="grid-column-start:1; grid-column-end:6" class="smallfont" id="formfactors">
+        <h3>Form factors </h3>
+        <p>The form factor of a keyboard should be one of the most important things to consider when picking parts. It can range from a small 60% to a large full-size keyboard. As a general rule, it is good to go as small as comfortable. I personally main a 65% keyboard, because I really need arrow keys, but I don’t use anything bigger because the function row and most navigation keys aren’t too important to me. Going smaller is usually better because it provides more mouse space, which is great especially when gaming.</p>
+        <p>When picking individual parts, looking at the form factor is a great way to rule out some parts. A 60% plate can’t be used with a full-size PCB. ANSI, ISO, or other alternative layouts also need to be considered when picking parts.</p>
+        <p>Like everything in the hobby, this is about preference, but also like everything in the hobby, people love to promote one size as "the best" size. I'd suggest following the guide to the right, or <a href="https://www.youtube.com/watch?v=GxS30X_unjU">this video</a> by TaeKeyboards.</p>
+      </article>
+      <figure style="grid-column-start:6; grid-column-end:11; position:relative; left:2vw; top:1vw">
+        <a href="../images/buyingimages/formfactors.png"><img src="../images/buyingimages/formfactors.png" width="85%" height="auto" title="Form factor guide by Keyboard Univeristy" alt="Keyboard form factor guide"></a>
+        <figcaption class="smallerfont">From Keyboard University's <a href="https://keyboard.university/guides/what-size-mechanical-keyboard-should-i-get-g7dbr">Guide to choosing a Keyboard size</a></figcaption>
+      </figure>  
+      
+      <!-- compatibility issues --->
+      <figure style="grid-column-start:2; grid-column-end:5">
+        <a href="https://fantechworld.com/hot-swappable-switches-what/"><img src="../images/buyingimages/5pin3pin.png" width="100%" height="auto" title="5 pin vs 3 pin switches" alt="5 pin vs 3 pin switches"></a>
+      </figure>  
+      <figure style="grid-column-start:1; grid-column-end:3">
+        <a href="https://kbdfans.com/collections/keyboard-stabilizer/products/gateron-lubed-plate-mounted-stabilizers"><img src="../images/anatomyimages/stab1.jpg" width="95%" height="auto" title="Plate-mounted stabilizers" alt="Gateron Stabs"></a>
+        <figcaption class="smallfont">Plate-mounted stabs</figcaption>
+      </figure> 
+      <figure style="grid-column-start:4; grid-column-end:6; position:relative; right:2vw">
+        <a href="https://kbdfans.com/collections/keyboard-stabilizer/products/coming-soon-kbdfans-pc-screw-in-stabilizers"><img src="../images/anatomyimages/stab2.jpg" width="95%" height="auto" title="PCB-mounted stabilizers" alt="KBDFans Stabs"></a>
+        <figcaption class="smallfont">PCB-mounted stabs</figcaption>
+      </figure>
+      <article style="grid-column-start:6; grid-column-end:11; position:relative; bottom:20vw; margin-bottom:-20vw" class="smallfont">
+        <h3>Common Compatibility Issues</h3>
+        <ol>
+          <li>3-pin and 5-pin switches</li>
+          <p>Some switches have the 3 mandatory pins, while others have 5 pins for more stability. However, most PCBs only have 3 pin holes for the switches. You can cut the extra pins off though, but it requires more work.</p>
+          <li>North-facing switches</li>
+          <p>If the PCB makes the switches face upwards instead of downwards, it is possible to have interference when using cherry profile keycaps. Interference is when the keycap touches the switch when pressing it, making it sound and feel worse. To be safe, it is best to avoid using cherry keycaps with north-facing switches. The product details of a PCB will usually say if it is north or south-facing.</p>
+          <li>Plate-mounted vs. PCB-mounted stabilizers</li>
+          <p>Some PCBs don’t support PCB-mount stabilizers, needing you to buy plate-mount stabs. Most cheaper PCBs in cheaper kits are like this. </p>
+          <li>Keycap layout issues</li>
+          <p>If the PCB needs specific keycap sizes, like a smaller shift key, your keycap set needs to have that smaller shift key. More expensive sets usually have almost all possible keys to cover all possible layouts. You see if your keyboard needs any abnormal keys and make sure to get a set that has that, lest the set become almost unusable.</p>
+      </article>
+
+
+
+    </main>
+    
+    <!-- footer --->
+    <img src="../images/globalimages/bongocat.png" width="10%" title="bongo cat" alt="bongo cat" style="position:fixed; bottom:5.7vh; right:0">
+    <footer> 
+      <span style="position:relative; top:1.5vh">
+        &nbsp<a href=htdocs/about.html>About</a> <a href=htdocs/sources.html>Sources</a>
+        <span style="word-spacing:normal; position:relative; left:125vh">Join the community:</span>
+        <a href="https://www.reddit.com/r/MechanicalKeyboards/" class="reddit"></a>
+        <a href="https://geekhack.org/index.php" class="geekhack"></a>
+        <a href="https://discord.gg/taehatypes" class="discord"></a>
+      </span>
+    </footer>
+
   </body>
 
 </html>

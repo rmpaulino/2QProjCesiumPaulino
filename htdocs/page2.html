@@ -12,9 +12,6 @@
     <link rel="shortcut icon" type="image/png" href="../images/globalimages/favicon.png"/>
 
     <style>
-    #smallfont {
-      font-size: 0.95em;
-    }
     #intro {
       padding-right:3vw;
     }
@@ -39,16 +36,16 @@
 
   <body>
 
-    <main id="content"> 
+    <!-- website header --->
+    <header style="position:fixed; height: 7vw; top:0; background-color:#1c1b1d; z-index:10">
+      <figure style="position:relative; top:1.5vw; left: 1vw">
+        <img src="../images/globalimages/logo.png" width="22%" height="auto" title="Keyboard" alt="keeb.net Logo">
+      </figure>
+      <nav id="navbar"><a href=../index.html>Homepage</a> <a href=page2.html id="currentpage">Anatomy</a> <a href=page3.html>Buying</a> <a href=page4.html>Building</a> <a href=page5.html>Glossary</a></nav>
+      <figure id="headerhr"></figure>
+    </header>
 
-      <!-- website header --->
-      <header style="grid-column-start:1; grid-column-end:4; margin:1vw 0px; display:table">
-        <img src="../images/globalimages/logo.png" width="80%" height="auto" title="Keyboard" alt="keeb.net Logo" style="display:table-cell; vertical-align:middle;">
-      </header>
-      <nav style="grid-column-start:4; grid-column-end:11" id="header">
-        <span id="navbar"><a href=../index.html>Homepage</a> <a href=page2.html id="currentpage">Anatomy</a> <a href=page3.html>Parts</a> <a page4.html>Building</a> <a href=page5.html>Glossary</a></span>
-      </nav>      
-      <figure style="grid-column-start:1; grid-column-end:11" id="headerhr"></figure>
+    <main id="content"> 
 
       <!-- intro  --->
       <article style="grid-column-start:1; grid-column-end:7" id="intro">
@@ -60,7 +57,7 @@
       </figure>
 
       <!-- case --->
-      <article style="grid-column-start:1; grid-column-end:5" id="smallfont">
+      <article style="grid-column-start:1; grid-column-end:5" class="smallfont">
         <h3>1. Case</h3>
         <p>The case is what encases the internals and electronics of the keyboard. It makes up most of the board so this is what you should choose first. The case dictates the form factor of your board, the PCB, plate options, the overall aesthetics, and a lot of the cost. It can be made of things like aluminum, metal, plastic, polycarbonate, acrylic, and many more. Many of these online just come with the case, however many also come with almost everything you need like a compatible plate, PCB, and stabilizers. These are called barebones (BB) kits and they are great for beginners as they have what you need to get started. Some examples of BB kits are the GMMK Pro, TM680, or the KBD65.</p>
       </article>
@@ -91,7 +88,7 @@
 
       <!-- stablilizers --->
       <figure style="grid-column-start:1; grid-column-end:4">
-        <a href="https://kbdfans.com/collections/keyboard-stabilizer/products/gateron-lubed-plate-mounted-stabilizers"><img src="../images/anatomyimages/stab1.png" width="85%" height="auto" title="Gateron Stabilizers from KBDFans" alt="Gateron Stabs"></a>
+        <a href="https://kbdfans.com/collections/keyboard-stabilizer/products/gateron-lubed-plate-mounted-stabilizers"><img src="../images/anatomyimages/stab1.jpg" width="85%" height="auto" title="Gateron Stabilizers from KBDFans" alt="Gateron Stabs"></a>
       </figure>
       <figure style="grid-column-start:4; grid-column-end:7">
         <a href="https://kbdfans.com/collections/keyboard-stabilizer/products/coming-soon-kbdfans-pc-screw-in-stabilizers"><img src="../images/anatomyimages/stab2.jpg" width="85%" height="auto" title="KBDFans PC Stabilizers" alt="KBDFans Stabs"></a>
@@ -102,7 +99,7 @@
       </article>
 
       <!-- switches --->
-      <article style="grid-column-start:1; grid-column-end:6" id="smallfont">
+      <article style="grid-column-start:1; grid-column-end:6" class="smallfont" id="switches">
         <h3>5. Switches</h3>
         <p>This might be the most well-known part of the hobby. There are 3 general types: linear, tactile, and clicky.</p>
         <ol>
@@ -119,7 +116,7 @@
           <source src="../mmfiles/switchanimation.mp4">
           Your browser does not support the video element. Kindly update it to the latest version.
         </video>
-        <figcaption id="smallfont">From <a href="https://youtu.be/1NpNygIrnaQ?t=375">"Anatomy of a Custom Mechanical Keyboard"</a> by TaehaTypes</figcaption>
+        <figcaption class="smallerfont">From <a href="https://youtu.be/1NpNygIrnaQ?t=375">"Anatomy of a Custom Mechanical Keyboard"</a> by TaehaTypes</figcaption>
       </figure>
 
       <!-- keycaps --->
@@ -129,13 +126,13 @@
       <figure style="grid-column-start:4; grid-column-end:7">
         <a href="https://www.reddit.com/r/MechanicalKeyboards/comments/o6dzn2/mode65_ewhite_prototype_with_gmk_olivia/"><img src="../images/anatomyimages/gmkolivia.jpg" width="95%" height="auto" title="GMK Olivia" alt="GMK Olivia Keycaps"></a>
       </figure>  
-      <article style="grid-column-start:7; grid-column-end:11" id="smallfont">
+      <article style="grid-column-start:7; grid-column-end:11" class="smallfont" id="keycaps">
         <h3>6. Keycaps</h3>
         <p>Keycaps are the final piece of a custom board that ties everything together and makes the aesthetics. There are many keycaps profiles, like  cherry, OEM, SA, XDA, etc. The two popular keycap plastic materials are ABS and PBT. Both materials have their own positives and negatives, and much like everything else in this hobby, it’s all about preference. Popular keycap brands include GMK, EnjoyPBT, Taihao, or Maxkey.</p>
       </article>
 
       <!-- other parts --->
-      <article style="grid-column-start:1; grid-column-end:6" id="smallfont">
+      <article style="grid-column-start:1; grid-column-end:6" class="smallfont" id="addparts">
         <h3>7. Additional Parts</h3>
         <ol>
           <li>Foam/Rubber</li>
@@ -166,8 +163,11 @@
     <img src="../images/globalimages/bongocat.png" width="10%" title="bongo cat" alt="bongo cat" style="position:fixed; bottom:5.7vh; right:0">
     <footer> 
       <span style="position:relative; top:1.5vh">
-        &nbsp<a href=about.html>About</a> <a href=sources.html>Sources</a>
-        <span style="word-spacing:normal; float:right; margin-right:25px">Theme: GMK Olivia</span>
+        &nbsp<a href=htdocs/about.html>About</a> <a href=htdocs/sources.html>Sources</a>
+        <span style="word-spacing:normal; position:relative; left:125vh">Join the community:</span>
+        <a href="https://www.reddit.com/r/MechanicalKeyboards/" class="reddit"></a>
+        <a href="https://geekhack.org/index.php" class="geekhack"></a>
+        <a href="https://discord.gg/taehatypes" class="discord"></a>
       </span>
     </footer>
 

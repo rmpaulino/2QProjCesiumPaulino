@@ -8,7 +8,7 @@
 		<meta name="author" content="Rafael Paulino">
 		<meta name="keywords" content="HTML, CSS, JavaScript">
 		<meta name="revised" content="6-11-2020">
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" type="image/png" href="images/globalimages/favicon.png"/>
 
     <style>
@@ -31,16 +31,16 @@
 
   <body>
 
-    <main id="content"> 
+    <!-- website header --->
+    <header style="position:fixed; height: 7vw; top:0; background-color:#1c1b1d; z-index:10">
+      <figure style="position:relative; top:1.5vw; left: 1vw">
+        <img src="images/globalimages/logo.png" width="22%" height="auto" title="Keyboard" alt="keeb.net Logo">
+      </figure>
+      <nav id="navbar"><a href=index.html id="currentpage">Homepage</a> <a href=htdocs/page2.html>Anatomy</a> <a href=htdocs/page3.html>Buying</a> <a href=htdocs/page4.html>Building</a> <a href=htdocs/page5.html>Glossary</a></nav>
+      <figure id="headerhr"></figure>
+    </header>
 
-      <!-- website header --->
-      <header style="grid-column-start:1; grid-column-end:4; margin:1vw 0px; display:table">
-        <img src="images/globalimages/logo.png" width="80%" height="auto" title="Keyboard" alt="keeb.net Logo" style="display:table-cell; vertical-align:middle;">
-      </header>
-      <nav style="grid-column-start:4; grid-column-end:11" id="header">
-        <span id="navbar"><a href=index.html id="currentpage">Homepage</a> <a href=htdocs/page2.html>Anatomy</a> <a href=htdocs/page3.html>Parts</a> <a href=htdocs/page4.html>Building</a> <a href=htdocs/page5.html>Glossary</a></span>
-      </nav>      
-      <figure style="grid-column-start:1; grid-column-end:11" id="headerhr"></figure>
+    <main id="content"> 
 
       <!--- first part --->
       <figure style="grid-column-start:1; grid-column-end:5">
@@ -48,7 +48,7 @@
       </figure>
       <article style="grid-column-start:5; grid-column-end:11" id="firstpart">
         <h2>What are custom keyboards?</h2>
-        Custom mechanical keyboards are keyboards that you pick out, assemble, and customize yourself. These allow for a much greater degree of customization, as such, you can tailor it specifically to your own needs and wants. Almost anything is possible in custom keyboards, from the keycaps with the colors and aesthetics that match your setup to the specific spring weight and type of switch that fits your finger strength. They don’t have to break the bank to be custom either. It can range from a simple $100 plastic board with budget switches, to a $3,500 full metal keyboard with the best of the best components money can buy. All this makes your soon-to-be keyboard unique and special. <p>
+        <p>Custom mechanical keyboards are keyboards that you pick out, assemble, and customize yourself. These allow for a much greater degree of customization, as such, you can tailor it specifically to your own needs and wants. Almost anything is possible in custom keyboards, from the keycaps with the colors and aesthetics that match your setup to the specific spring weight and type of switch that fits your finger strength. They don’t have to break the bank to be custom either. It can range from a simple $100 plastic board with budget switches, to a $3,500 full metal keyboard with the best of the best components money can buy. All this makes your soon-to-be keyboard unique and special. </p>
       </article>
 
       <!-- second part --->
@@ -66,15 +66,21 @@
       </figure>
       <article style="grid-column-start:5; grid-column-end:11" id="thirdpart">
         <h3>What is keeb.net?</h3>
-        <p>When I got into the hobby around a year ago, I found that there were no real good starting points. All the knowledge was spread across the internet, and I just had to learn everything myself through watching lots of videos online. With that, this site aims to cater to beginner enthusiasts, who are looking for starting info all about the hobby. It will mainly focus on what the different components are and picking the right parts, but a basic build guide and glossary will be included. It is not intended to be the one and only guide, but merely a jumping-off point to make the process easier.<p>
+        <p>When I got into the hobby around a year ago, I found that there were no real good starting points. All the knowledge was spread across the internet, and I just had to learn everything myself through watching lots of videos online. With that, this site aims to cater to beginner enthusiasts, who are looking for starting info all about the hobby. It will mainly focus on what the different components are and picking the right parts, but a many basic tips and a glossary will be included. It is not intended to be the one and only guide, but merely a jumping-off point to make the process easier.<p>
       </article>
 
       <!-- youtube video --->
-      <figure style="grid-column-start:3; grid-column-end:9; height:30vw; padding-bottom:10vw">
+      <article style="grid-column-start:3; grid-column-end:9">
         <h2>More about the hobby:</h2>
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Qr3nYR15wxU?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer;autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <p>Video - "Why Mechanical Keyboards?" by Taeha Types</p>
-      </figure>
+        <figure style="height:20vw; padding-bottom:5vw">
+          <iframe width="100%" height="90%" src="https://www.youtube.com/embed/Qr3nYR15wxU?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer;autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <figcaption class="smallerfont" style="margin-bottom:3vw">Video - "Why Mechanical Keyboards?" by Taeha Types</figcaption>
+        </figure>
+        <figure style="height:20vw; padding-bottom:7vw">
+          <iframe width="100%" height="90%" src="https://www.youtube.com/embed/6Wym49aXxzM?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer;autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <figcaption class="smallerfont">Video - "Why Get a Mechanical Keyboard?" by TaeKeyboards</figcaption>
+        </figure>
+      </article>
 
     </main>
     
@@ -83,7 +89,10 @@
     <footer> 
       <span style="position:relative; top:1.5vh">
         &nbsp<a href=htdocs/about.html>About</a> <a href=htdocs/sources.html>Sources</a>
-        <span style="word-spacing:normal; float:right; margin-right:25px">Theme: GMK Olivia</span>
+        <span style="word-spacing:normal; position:relative; left:125vh">Join the community:</span>
+        <a href="https://www.reddit.com/r/MechanicalKeyboards/" class="reddit"></a>
+        <a href="https://geekhack.org/index.php" class="geekhack"></a>
+        <a href="https://discord.gg/taehatypes" class="discord"></a>
       </span>
     </footer>
 

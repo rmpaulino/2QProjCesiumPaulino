@@ -1,8 +1,114 @@
 <!DOCTYPE html>
 <html>
-  
+
+  <head>
+
+    <title>keeb.net</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Rafael Paulino">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<meta name="revised" content="6-11-2020">
+		<link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" type="image/png" href="images/globalimages/favicon.png"/>
+
+    <style>
+    li {
+      line-height: 2.2;
+    }
+    </style>
+
+  </head>
+
   <body>
-    <p>Page 5/Glossary</p>
+
+    <!-- website header --->
+    <header style="position:fixed; height: 7vw; top:0; background-color:#1c1b1d; z-index:10">
+      <figure style="position:relative; top:1.5vw; left: 1vw">
+        <img src="../images/globalimages/logo.png" width="22%" height="auto" title="Keyboard" alt="keeb.net Logo">
+      </figure>
+      <nav id="navbar"><a href=../index.html>Homepage</a> <a href=page2.html>Anatomy</a> <a href=page3.html>Buying</a> <a href=page4.html>Building</a> <a href=page5.html id="currentpage">Glossary</a></nav>
+      <figure id="headerhr"></figure>
+    </header>
+
+    <main id="content"> 
+
+      <article style="grid-column-start:1; grid-column-end:11">
+        <h2>Glossary of Terms</h2>
+        <ol>
+          <li>ABS - Acrylonitrile Butadiene Styrene plastic is a material used for keycaps.</li>
+          <li>Acrylic - A slightly flexible plastic used for plate and layered cases.</li>
+          <li>Actuation - When the switch sends a signal to the device that it has been pressed.</li>
+          <li>Actuation Force – Amount of downward force required for the switch to register or hit the bottom (bottom out). Usually measured in grams.</li>
+          <li>Actuation Point – The distance required to be traveled to actuate a switch. Usually measured in centimeters or millimeters.</li>
+          <li>Alu - Short for aluminum, a material commonly used for plates and cases.</li>
+          <li>ANSI - A common keyboard layout that most keyboards use.</li>
+          <li>Artisan - See <a href="page2.html#addparts">artisan keycaps</a></li>
+          <li>Bottom out - When a switch is totally pressed down.</li>
+          <li>Chatter - When a single keypress registers multiple times. This is rare in modern keyboards due to software.</li>
+          <li>Cherry - Can refer to the manufacturer of switches and keycaps, or the popular Cherry profile of keycaps.</li>
+          <li>Clack - Refers to a higher-pitched slightly muted sound that a keyboard or switch can have (think <a href="https://www.youtube.com/watch?v=P6gW18XE6EM">Novelkeys creams</a>).</li>
+          <li>Clicky - See <a href="page2.html#switches">switch types</a></li>
+          <li>Doubleshot - A way of manufacturing keycaps where the legends are plastic and are integrated into the keycap itself. Usually very durable.</li>
+          <li>Ergo - Refers to ergonomic keyboards that are made to be more “ergonomic” by using a split layout, slopes, or ortholinear layouts.</li>
+          <li>Form factor - See <a href="page3.html#formfactors">form factors</a></li>
+          <li>FR4 - A slightly flexible plate material.</li>
+          <li>Full size - 100% form factor with a Numpad, function row, arrows, and navigation keys. See <a href="page3.html#formfactors">form factors</a>.</li>
+          <li>Gasket - Gasket mounting is when the plate rests on foam or rubber on the case. This is done for more bounciness and less harsh sound.</li>
+          <li>Ghosting - When a key that isn’t pressed is mistakenly registered. This is rare in modern keyboards due to software.</li>
+          <li>GMK - A keycap manufacturer that manufactures keycap designs for many groupbuys. Very high quality and also very expensive.</li>
+          <li>Hotswap - See <a href="page2.html#pcb">PCB</a></li>
+          <li>Housing - A modern switch has a top housing and a bottom housing that connects to make a switch.</li>
+          <li>Hysteresis - An uncommon trait in clicky or tactile switches where the tactile bump is not at the point of actuation (when it clicks but it doesn’t register)</li>
+          <li>ISO - A less common keyboard layout than ANSI, more popular in European countries.</li>
+          <li>Keeb - Short for keyboard.</li> 
+          <li>Keycap - See <a href="page2.html#keycaps">Keycaps</a></li>
+          <li>Keycult - Maker of very high quality, exclusive, and expensive keyboard cases and kits.</li>
+          <li>Laser engraving - A way of manufacturing keycaps where the legends are laser printed on the plastic. Medium durability.</li>
+          <li>Layout - Refers to the organization of keys (ANSI and ISO are most common).</li>
+          <li>Leaf - The switch leaf is what electronically makes the switch work.</li>
+          <li>Legends - The character on a keycap that indicates its function.</li>
+          <li>Linear - See <a href="page2.html#switches">switch types</a></li>
+          <li>Mill-max - Mill-max sockets can be soldered on a soldered PCB to make it hotswappable.</li>
+          <li>NKRO - Short for N-Key Rollover. With this, all keys can be pressed with every key being registered.</li>
+          <li>OEM - Refers to the popular OEM layout of keycaps.</li>
+          <li>Ortholinear - When the keys are in a grid vertically. Very uncommon layout. Opposite of staggered.</li>
+          <li>Pad printing - A way of manufacturing keycaps where the legends are ink pressed onto the plastic. Lower durability.</li>
+          <li>PBT - Polybutylene Terephthalate plastic is a material used for keycaps.</li>
+          <li>PCB - See <a href="page2.html#pcb">PCB</a></li>
+          <li>Ping - Refers to the metallic, harsh, high pitched sound that a switch spring or metal case can make when typing.</li>
+          <li>Plate - See <a href="page2.html#plate">Plate</a></li>
+          <li>Polycarbonate - A transparent flexible plastic used for plates and some cases.</li>
+          <li>POM  - Polyoxymethylene plastic is a material used for keycaps</li>
+          <li>Prebuilt - A complete keyboard from a manufacturer. Opposite of custom.</li>        
+          <li>Rattle - An unlubed stabilizer can move around and rattle when pressing, making a noticeable noise.</li>
+          <li>SA - Refers to the SA layout of keycaps that are much taller than normal.</li>
+          <li>Sculpted - Sculpted keycaps have different molds per row, making each row easily recognizable. Opposite of uniprofile.</li>
+          <li>Stabilizer/Stab - See <a href="page2.html#stabs">Stabilizer</a></li>        
+          <li>Staggered - When the keys aren’t aligned vertically. Very common layout. Opposite of staggered.</li>
+          <li>Spring - The spring below the stem in a switch to make it function.</li>
+          <li>Stem - The stem in a switch is what moves up and down and makes it work.</li>
+          <li>Tactile - See <a href="page2.html#switches">switch types</a></li>        
+          <li>Thock/Thocc - Refers to a lower-pitched deep and slightly muted sound that a keyboard or switch can have (think Gateron Ink Blacks or <a href="https://www.youtube.com/watch?v=AOFnLntygwE">Bobas</a>).</li>
+          <li>TKL - Short for the Tenkeyless 80% layout, Same as full size but without a Numpad. See <a href="page3.html#formfactors">form factors.</a></li>
+          <li>Travel distance - The distance to bottom out a switch.</li>
+          <li>Uniprofile - Uniprofile keycaps have the same mold per row, making all the keys interchangeable. Opposite of sculpted.</li>               
+          <li>Winkeyless - When a keyboard omits the Windows key</li>   
+        </ol>
+      </article>
+    </main>
+    
+    <!-- footer --->
+    <img src="../images/globalimages/bongocat.png" width="10%" title="bongo cat" alt="bongo cat" style="position:fixed; bottom:5.7vh; right:0">
+    <footer> 
+      <span style="position:relative; top:1.5vh">
+        &nbsp<a href=htdocs/about.html>About</a> <a href=htdocs/sources.html>Sources</a>
+        <span style="word-spacing:normal; position:relative; left:125vh">Join the community:</span>
+        <a href="https://www.reddit.com/r/MechanicalKeyboards/" class="reddit"></a>
+        <a href="https://geekhack.org/index.php" class="geekhack"></a>
+        <a href="https://discord.gg/taehatypes" class="discord"></a>
+      </span>
+    </footer>
+
   </body>
 
 </html>
